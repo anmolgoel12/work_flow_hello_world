@@ -17,4 +17,4 @@ jobs:
         
       - name: Retrieve ACCESS_ID
         run: |
-          echo "Access ID: ${{ github.ACCESS_ID }} ${{ ACCESS_ID }}"
+          echo "Access ID: ${{ variables.ACCESS_ID }} ${{ GITHUB_ACCESS_ID }}"
