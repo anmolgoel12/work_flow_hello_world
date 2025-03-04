@@ -15,4 +15,4 @@ jobs:
         
       - name: Retrieve ACCESS_ID
         run: |
-          echo "Access ID: ${{ secrets.ACCESS_ID }}  - ${{ var.ACCESS_ID }}"
+          echo "Access ID: ${{ secrets.ACCESS_ID }}  - $ACCESS_ID "
