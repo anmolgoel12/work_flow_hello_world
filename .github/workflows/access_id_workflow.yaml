@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main  # Change this to your desired branch if not `main`
+env:
+  ACCESS_ID: scaler-123
 
 jobs:
   access-id-job:
@@ -15,6 +17,4 @@ jobs:
         
       - name: Retrieve ACCESS_ID
         run: |
-          echo "Access ID: $ACCESS_ID "
-        env:
-          ACCESS_ID: scaler-123
+          echo "Access ID: $ACCESS_ID"
