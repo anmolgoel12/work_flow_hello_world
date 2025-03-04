@@ -16,3 +16,5 @@ jobs:
       - name: Retrieve ACCESS_ID
         run: |
           echo "Access ID: $ACCESS_ID "
+        env:
+          ACCESS_ID: scaler-123
