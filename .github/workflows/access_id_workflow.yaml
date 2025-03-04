@@ -17,4 +17,4 @@ jobs:
         
       - name: Retrieve ACCESS_ID
         run: |
-          echo "Access ID: $ACCESS_ID"
+          echo "Access ID: ${{ vars.$ACCESS_ID }}"
