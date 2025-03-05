@@ -5,7 +5,7 @@ on:
     branches:
       - main  # Change this to your desired branch if not `main`
 env:
-  ACCESS_ID: ${{ secrets.ACCESS_ID }}
+  ACCESS_ID: ${{ vars.ACCESS_ID }}
 
 jobs:
   access-id-job:
@@ -17,4 +17,4 @@ jobs:
         
       - name: Retrieve ACCESS_ID
         run: |
-          echo "Access ID: ${{ secrets.ACCESS_ID }}"
+          echo "Access ID: $ACCESS_ID"
