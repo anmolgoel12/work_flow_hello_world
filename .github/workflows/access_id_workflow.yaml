@@ -17,4 +17,4 @@ jobs:
         
       - name: Retrieve ACCESS_ID
         run: |
-          echo "Access ID: $ACCESS_ID"
+          echo "The ACCESS_ID is $ACCESS_ID"
